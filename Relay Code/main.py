@@ -9,7 +9,11 @@ channel4 = 26
 
 # GPIO setup
 GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(channel1, GPIO.OUT)
+GPIO.setup(channel2, GPIO.OUT)
 GPIO.setup(channel3, GPIO.OUT)
+GPIO.setup(channel4, GPIO.OUT)
 
 if __name__ == '__main__':
     try:
