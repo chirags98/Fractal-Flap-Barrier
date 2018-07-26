@@ -14,23 +14,28 @@ if __name__ == '__main__':
     try:
         # Turn Relay off
         relay.relay_off(channel3)
-        time.sleep(1)
+        print("Relay Off \n")
+        time.sleep(2)
 
         #Change state of relay
         relay.change_relay_state(channel3)
-        time.sleep(1)
+        print("Relay On \n")
+        time.sleep(2)
 
         #Turn Relay off
         relay.relay_off(channel3)
-        time.sleep(1)
+        print("Relay Off \n")
+        time.sleep(2)
 
         #Turn Relay on
         relay.relay_on(channel3)
-        time.sleep(1)
+        print("Relay On \n")
+        time.sleep(2)
 
         # Change state of relay
         relay.change_relay_state(channel3)
-        time.sleep(1)
+        print("Relay Off \n")
+        time.sleep(2)
 
         GPIO.cleanup()  #Call at the very end of the program (before exiting the program)
     except KeyboardInterrupt:

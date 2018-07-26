@@ -20,18 +20,22 @@ if __name__ == '__main__':
     try:
         #Change state of relay
         relay.change_relay_state(channel3)
+        print("Relay On \n")
         time.sleep(1)
 
         #Turn Relay off
         relay.relay_off(channel3)
+        print("Relay Off \n")
         time.sleep(1)
 
         #Turn Relay on
         relay.relay_on(channel3)
+        print("Relay On \n")
         time.sleep(1)
 
         # Change state of relay
         relay.change_relay_state(channel3)
+        print("Relay Off \n")
         time.sleep(1)
 
         ######################################
