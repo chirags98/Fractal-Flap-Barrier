@@ -10,14 +10,19 @@ GPIO.setup(channel, GPIO.OUT)
 
 if __name__ == '__main__':
     try:
+        #Change state of relay
         relay.change_relay_state(channel)
         time.sleep(1)
+
+        #Turn Relay off
         relay.relay_off(channel)
         time.sleep(1)
 
-        relay.change_relay_state(channel)
+        #Turn Relay on
+        relay.relay_on(channel)
         time.sleep(1)
 
+        # Change state of relay
         relay.change_relay_state(channel)
         time.sleep(1)
 

@@ -1,5 +1,4 @@
 import RPi.GPIO as GPIO
-import time
 
 current_state = 0;
 
