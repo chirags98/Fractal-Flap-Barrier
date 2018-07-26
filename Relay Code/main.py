@@ -1,4 +1,4 @@
-import relay.py as relay
+import relay as relay
 import RPi.GPIO as GPIO
 import time
 
