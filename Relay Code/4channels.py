@@ -15,6 +15,11 @@ GPIO.setup(channel1, GPIO.OUT)
 GPIO.setup(channel2, GPIO.OUT)
 GPIO.setup(channel3, GPIO.OUT)
 GPIO.setup(channel4, GPIO.OUT)
+# Turn Relays off
+relay.relay_off(channel1)
+relay.relay_off(channel2)
+relay.relay_off(channel3)
+relay.relay_off(channel4)
 
 if __name__ == '__main__':
     try:
