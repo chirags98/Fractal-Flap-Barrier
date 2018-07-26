@@ -22,4 +22,4 @@ def change_relay_state(pin):
         GPIO.output(pin, GPIO.LOW)  # Turn relay off
 
     else:
-        GPIO.output(pin, GPIO.LOW)  # Turn relay off
+        GPIO.output(pin, GPIO.HIGH)  # Turn relay off
