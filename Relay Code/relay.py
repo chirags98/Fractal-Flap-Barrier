@@ -19,7 +19,7 @@ def relay_off(pin):
 def change_relay_state(pin):
     global current_state
     if current_state == 1:
-        GPIO.output(pin, GPIO.LOW)  # Turn relay off
+        relay_off(pin)  # Turn relay off
 
     else:
-        GPIO.output(pin, GPIO.HIGH)  # Turn relay off
+        relay_on(pin)   # Turn relay off
